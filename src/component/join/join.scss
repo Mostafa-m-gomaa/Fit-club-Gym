@@ -1,0 +1,74 @@
+@import "../helpers/mixins";
+.join{
+    display: flex;
+    gap: 20px;
+    padding: 0 35px;
+    @include media(mopile){
+        flex-direction: column;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        span {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+            @include media(mopile){
+                font-size: 2rem;
+            }
+        }
+        hr{
+            border: 2px solid var(--orange);
+            border-radius: 20%;
+            margin: -10px 0;
+            position: absolute;
+            width: 10.5rem;
+        }
+    }
+    .right{
+        flex: 1;
+        align-items: flex-end;
+        display: flex;
+        justify-content: center;    
+            form{
+            background-color: gray;
+            
+            display: flex;
+            gap: 3rem;
+            padding: 1rem 2rem;
+            @include media(mopile){
+                padding: 0.2rem 1.2rem;
+                width: 80%;
+            }
+            input{
+                
+            background-color: initial;
+            border: none;
+            color: var(--lightgray);
+            outline: none;
+            @include media(mopile){
+               width: 80%;
+            }
+            }
+            button{
+                background-color: var(--orange);
+                color: #fff;
+                border: 4px solid transparent;
+                font-weight: 700;
+                padding: 0.5rem;
+                transition: all .3s;
+                @include media(mopile){
+                    padding: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+::placeholder{
+    color: white;
+}

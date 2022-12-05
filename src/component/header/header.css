@@ -1,0 +1,72 @@
+:root {
+  --lightgray: #D9D9D9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464D53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
+}
+
+.header {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.header .bars {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .bars {
+    display: block;
+    position: fixed;
+    right: 20px;
+    width: 25px;
+    height: 20px;
+    top: 40px;
+    z-index: 20;
+  }
+}
+.header img {
+  height: 50px;
+}
+@media (max-width: 767px) {
+  .header img {
+    height: 40px;
+  }
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .header ul {
+    flex-direction: column;
+    background: var(--planCard);
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: -300px;
+    transition: 0.4s;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 30;
+    text-align: center;
+  }
+}
+.header ul li {
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+.header ul li:hover {
+  color: var(--orange);
+}
+@media (max-width: 767px) {
+  .header .ul-class {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,91 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 35px;
+}
+.programs .program-header {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  .programs .program-header {
+    flex-direction: column;
+    font-size: 30px;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+.programs .cards {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .programs .cards {
+    flex-direction: column;
+  }
+}
+.programs .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: gray;
+  padding: 2rem;
+  color: white;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .programs .cards .card {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+.programs .cards .card:hover {
+  background: var(--planCard);
+}
+.programs .cards .card .hed {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.programs .cards .card svg {
+  fill: #fff;
+  height: 2rem;
+  width: 2rem;
+}
+@media (max-width: 767px) {
+  .programs .cards .card svg {
+    margin: auto;
+  }
+}
+.programs .cards .card span {
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+.programs .cards .card .join {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.programs .cards .card .join img {
+  width: 1rem;
+}
+@media (max-width: 767px) {
+  .programs .cards .card .join img {
+    width: 0.8rem;
+    height: 1rem;
+  }
+}
+.programs .cards .card .join span {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .programs .cards .card .join span {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=programs.css.map */

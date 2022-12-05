@@ -1,0 +1,90 @@
+.join {
+  display: flex;
+  gap: 20px;
+  padding: 0 35px;
+}
+@media (max-width: 767px) {
+  .join {
+    flex-direction: column;
+  }
+}
+.join .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.join .left span {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .join .left span {
+    font-size: 2rem;
+  }
+}
+.join .left hr {
+  border: 2px solid var(--orange);
+  border-radius: 20%;
+  margin: -10px 0;
+  position: absolute;
+  width: 10.5rem;
+}
+.join .right {
+  flex: 1;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+.join .right form {
+  background-color: gray;
+  display: flex;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+@media (max-width: 767px) {
+  .join .right form {
+    padding: 0.2rem 1.2rem;
+    width: 80%;
+  }
+}
+.join .right form input {
+  background-color: initial;
+  border: none;
+  color: var(--lightgray);
+  outline: none;
+}
+@media (max-width: 767px) {
+  .join .right form input {
+    width: 80%;
+  }
+}
+.join .right form button {
+  background-color: var(--orange);
+  color: #fff;
+  border: 4px solid transparent;
+  font-weight: 700;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+@media (max-width: 767px) {
+  .join .right form button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}/*# sourceMappingURL=join.css.map */

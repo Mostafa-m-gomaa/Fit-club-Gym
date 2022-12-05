@@ -1,0 +1,126 @@
+@import "../helpers/mixins";
+:root {
+    --lightgray: #D9D9D9;
+    --gray: #9c9c9c;
+    --orange: #f48915;
+    --darkGrey: #464D53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    --appColor:  #3c3f45;
+  }
+  .card>:nth-child(3){
+    font-size: 3rem;
+    font-weight: 700;
+}
+// .card:nth-child(2) {
+//     -webkit-transform: scale(1.1);
+//     background: var(--planCard) !important;
+//     // background-color: black !important; 
+//     transform: scale(1.1);
+//     svg{
+//         fill: white !important;
+//     }
+// button{
+//     color: orange;
+// }
+  
+// }
+// .cards>:nth-child(2) > svg{
+//     fill: white;
+// }
+.plans{
+    
+    padding:0 35px;
+    .card:nth-child(2) {
+        -webkit-transform: scale(1.1);
+        background: var(--planCard) !important;
+        // background-color: black !important; 
+        transform: scale(1.1);
+        svg{
+            fill: white !important;
+        }
+    button{
+        color: orange;
+    }
+      
+    }
+.plans-header{
+    display: flex;
+    color: wheat;
+    font-size: 45px;
+    gap: 4rem;
+    font-weight: 700;
+    font-style: italic;
+    @include media(mopile){
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        font-size: 30px;
+    }
+}
+.cards{
+    margin-top: 75px;
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    @include media(mopile){
+        flex-direction: column;
+    }
+    .card{
+        background: #646464;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+        width: 15rem;
+        @include media(mopile){
+           padding: 0.8rem;
+           text-align: center;
+        }
+        svg{
+            fill: var(--orange);
+            height: 2rem;
+            width: 2rem;
+            @include media(mopile){
+                margin: auto;
+            }
+        }
+        button{
+            background-color: #fff;
+            border: 4px solid transparent;
+            font-weight: 700;
+            padding: 0.5rem;
+            transition: all .3s;
+            cursor: pointer;
+        }
+        img{
+            width: 1rem;
+        }
+        .featur{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+            @include media(mopile){
+                gap: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+    
+}
+}
+.plans-blur-1 {
+    height: 23rem;
+    left: 0;
+    // top: 6rem;
+    width: 32rem;
+}
+.plans-blur-2 {
+    height: 23rem;
+    right: 0;
+    // top: 10rem;
+    width: 32rem;
+}

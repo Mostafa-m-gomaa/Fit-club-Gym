@@ -17,6 +17,7 @@
   flex-direction: column;
   gap: 6rem;
   overflow: hidden;
+  position: relative;
 }
 ::-webkit-scrollbar{
   display: none;
